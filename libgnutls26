@@ -1,0 +1,3 @@
+Package: libgnutls
+Pin: release a=unstable
+Pin-Priority: 800
