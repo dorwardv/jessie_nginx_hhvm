@@ -17,7 +17,7 @@ RUN wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | apt-key add -
 RUN echo deb http://dl.hhvm.com/debian jessie main | tee /etc/apt/sources.list.d/hhvm.list
 RUN echo deb http://ftp.us.debian.org/debian unstable main contrib non-free | tee /etc/apt/sources.list.d/unstable.list
 RUN apt-get update 
-RUN apt-get -y install hhvm-nightly
+RUN apt-get -y install hhvm
 
 # nginx config
 RUN sed -i -e "s/keepalive_timeout\s*65/keepalive_timeout 2/" /etc/nginx/nginx.conf
